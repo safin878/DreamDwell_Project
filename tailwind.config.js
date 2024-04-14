@@ -9,6 +9,7 @@ export default {
       colors: {
         pcolor: "#525CEB",
         scolor: "#BFCFE7",
+        tcolor: "#F8EDFF",
       },
     },
   },
