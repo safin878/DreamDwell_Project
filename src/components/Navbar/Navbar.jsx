@@ -76,7 +76,7 @@ const Navbar = () => {
                 <img
                   className="w-12 border rounded-full tooltip"
                   data-tip="hello"
-                  alt="Tailwind CSS Navbar component"
+                  alt="Tailwind "
                   src={user.photoURL}
                 />
               </div>
@@ -86,9 +86,14 @@ const Navbar = () => {
               </button>
             </div>
           ) : (
-            <Link to="/login">
-              <button className="btn">Login</button>
-            </Link>
+            <div className="flex gap-2">
+              <Link to="/login">
+                <button className="btn hover:bg-slate-500">Login</button>
+              </Link>
+              <Link to="/register">
+                <button className="btn hover:bg-amber-400">Register</button>
+              </Link>
+            </div>
           )}
         </div>
       </div>

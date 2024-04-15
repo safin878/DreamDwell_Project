@@ -34,6 +34,11 @@ const AuthProvider = ({ children }) => {
 
     return signInWithPopup(auth, provider);
   };
+  const Gitglelog = (auth, providergit) => {
+    setloading(true);
+
+    return signInWithPopup(auth, providergit);
+  };
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -52,6 +57,7 @@ const AuthProvider = ({ children }) => {
     logout,
     login,
     Googlelog,
+    Gitglelog,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
