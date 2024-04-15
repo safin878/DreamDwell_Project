@@ -1,6 +1,13 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/Authprovider";
 
 const Navbar = () => {
+  const { user, logout } = useContext(AuthContext);
+  // const hol = () => {
+  //   logout();
+  // };
+
   const navlinks = (
     <>
       <NavLink className="btn btn-ghost hover:bg-color" to="/">
@@ -51,7 +58,19 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navlinks}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn hover:bg- bg-pcolor text-white">Login</a>
+          {user ? (
+            <div>
+              <img alt="Tailwind CSS Navbar component" src={user} />
+              <p>{user.email}</p>
+              <button onClick={logout} className="btn">
+                logout
+              </button>
+            </div>
+          ) : (
+            <Link to="/login">
+              <button className="btn">Login</button>
+            </Link>
+          )}
         </div>
       </div>
     </>
