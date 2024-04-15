@@ -1,12 +1,21 @@
 import { NavLink, Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/Authprovider";
+import auth from "../../Firebase/firebase.init";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
   const { user, logout } = useContext(AuthContext);
-  // const hol = () => {
-  //   logout();
-  // };
+  const hol = () => {
+    logout(auth)
+      .then(() => {
+        // Sign-out successful.
+        toast.success("Sign-out successful");
+      })
+      .catch((error) => {
+        // An error happened.
+      });
+  };
 
   const navlinks = (
     <>
@@ -59,10 +68,20 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           {user ? (
-            <div>
-              <img alt="Tailwind CSS Navbar component" src={user} />
-              <p>{user.email}</p>
-              <button onClick={logout} className="btn">
+            <div className="flex gap-2">
+              <div
+                className="tooltip tooltip-bottom"
+                data-tip={user.displayName}
+              >
+                <img
+                  className="w-12 border rounded-full tooltip"
+                  data-tip="hello"
+                  alt="Tailwind CSS Navbar component"
+                  src={user.photoURL}
+                />
+              </div>
+
+              <button onClick={hol} className="btn">
                 logout
               </button>
             </div>
