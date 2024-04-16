@@ -28,9 +28,11 @@ const Navbar = () => {
       <NavLink className="btn btn-ghost hover:bg-color" to="/profile">
         <li>Profile</li>
       </NavLink>
-      <NavLink className="btn btn-ghost hover:bg-color" to="/properties">
-        <li>Properties</li>
-      </NavLink>
+      {user && (
+        <NavLink className="btn btn-ghost hover:bg-color" to="/properties">
+          <li>Properties</li>
+        </NavLink>
+      )}
     </>
   );
   return (
@@ -86,7 +88,10 @@ const Navbar = () => {
                 />
               </div>
 
-              <button onClick={hol} className="btn">
+              <button
+                onClick={hol}
+                className="btn hover:bg-red-400 hover:text-white"
+              >
                 logout
               </button>
             </div>

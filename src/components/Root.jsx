@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
 import { Helmet } from "react-helmet-async";
+import Footer from "../pages/Footer/Footer";
 
 const Root = () => {
   return (
@@ -10,6 +11,7 @@ const Root = () => {
       </Helmet>
       <Navbar></Navbar>
       <Outlet></Outlet>
+      <Footer></Footer>
     </>
   );
 };

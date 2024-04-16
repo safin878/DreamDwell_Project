@@ -21,11 +21,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/update",
-        element: <UpdateProfile></UpdateProfile>,
+        element: (
+          <PrivateRoute>
+            <UpdateProfile></UpdateProfile>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/profile",
-        element: <Profile></Profile>,
+        element: (
+          <PrivateRoute>
+            <Profile></Profile>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",
@@ -37,11 +45,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/properties",
-        element: (
-          <PrivateRoute>
-            <Properties></Properties>
-          </PrivateRoute>
-        ),
+        element: <Properties></Properties>,
       },
     ],
   },

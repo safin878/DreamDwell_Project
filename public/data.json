@@ -1,0 +1,159 @@
+[
+  {
+    "id": 1,
+    "segment_name": "Hospitals",
+    "estate_title": "City General Hospital",
+    "description": "A state-of-the-art medical facility equipped with advanced technology and experienced staff.",
+    "price": "$10,000,000",
+    "status": "sale",
+    "area": "50,000 sq ft",
+    "location": "Downtown",
+    "facilities": ["Emergency Room", "ICU", "Surgical Suites", "MRI Center"],
+    "image": "city_general_hospital.jpg",
+    "additional_info": {
+      "beds": 300,
+      "parking_capacity": 200,
+      "year_built": 2010
+    }
+  },
+  {
+    "id": 2,
+    "segment_name": "Hospitals",
+    "estate_title": "Sunrise Medical Center",
+    "description": "A modern healthcare facility focusing on personalized patient care and wellness.",
+    "price": "$15,000/month",
+    "status": "rent",
+    "area": "20,000 sq ft",
+    "location": "Suburbia",
+    "facilities": [
+      "Pediatrics Department",
+      "Maternity Ward",
+      "Physical Therapy Center"
+    ],
+    "image": "sunrise_medical_center.jpg",
+    "additional_info": {
+      "beds": 150,
+      "parking_capacity": 100,
+      "year_built": 2015
+    }
+  },
+  {
+    "id": 3,
+    "segment_name": "Hospitals",
+    "estate_title": "Unity Community Clinic",
+    "description": "A community-focused clinic providing primary care and preventive services.",
+    "price": "$500,000",
+    "status": "sale",
+    "area": "5,000 sq ft",
+    "location": "Suburbia",
+    "facilities": ["Family Medicine", "Pharmacy", "Laboratory Services"],
+    "image": "unity_community_clinic.jpg",
+    "additional_info": {
+      "exam_rooms": 10,
+      "parking_capacity": 50,
+      "year_built": 2000
+    }
+  },
+  {
+    "id": 4,
+    "segment_name": "Schools",
+    "estate_title": "Maplewood Elementary School",
+    "description": "An exemplary elementary school providing quality education and a nurturing environment.",
+    "price": "$5,000,000",
+    "status": "sale",
+    "area": "30,000 sq ft",
+    "location": "Suburbia",
+    "facilities": ["Classrooms", "Library", "Playground"],
+    "image": "maplewood_elementary_school.jpg",
+    "additional_info": {
+      "grades": "K-5",
+      "students_capacity": 500,
+      "year_built": 2000
+    }
+  },
+  {
+    "id": 5,
+    "segment_name": "Schools",
+    "estate_title": "Oakridge High School",
+    "description": "A comprehensive high school offering diverse academic and extracurricular programs.",
+    "price": "$8,000/month",
+    "status": "rent",
+    "area": "50,000 sq ft",
+    "location": "Urban",
+    "facilities": ["Science Labs", "Gymnasium", "Auditorium"],
+    "image": "oakridge_high_school.jpg",
+    "additional_info": {
+      "grades": "9-12",
+      "students_capacity": 1000,
+      "year_built": 1985
+    }
+  },
+  {
+    "id": 6,
+    "segment_name": "Schools",
+    "estate_title": "Meadowbrook Middle School",
+    "description": "A vibrant middle school fostering academic excellence and social growth among students.",
+    "price": "$6,500,000",
+    "status": "sale",
+    "area": "40,000 sq ft",
+    "location": "Suburbia",
+    "facilities": ["Classrooms", "Computer Lab", "Athletic Facilities"],
+    "image": "meadowbrook_middle_school.jpg",
+    "additional_info": {
+      "grades": "6-8",
+      "students_capacity": 750,
+      "year_built": 1995
+    }
+  },
+  {
+    "id": 7,
+    "segment_name": "Religious Facilities",
+    "estate_title": "Grace Cathedral",
+    "description": "A historic cathedral known for its stunning architecture and spiritual gatherings.",
+    "price": "Donation Basis",
+    "status": "sale",
+    "area": "15,000 sq ft",
+    "location": "Downtown",
+    "facilities": ["Sanctuary", "Chapels", "Meeting Rooms"],
+    "image": "grace_cathedral.jpg",
+    "additional_info": {
+      "denomination": "Christian",
+      "seating_capacity": 1000,
+      "year_built": 1928
+    }
+  },
+  {
+    "id": 8,
+    "segment_name": "Religious Facilities",
+    "estate_title": "Golden Temple Mosque",
+    "description": "A vibrant mosque serving the local Muslim community with prayer services and educational programs.",
+    "price": "Donation Basis",
+    "status": "sale",
+    "area": "10,000 sq ft",
+    "location": "Suburbia",
+    "facilities": ["Prayer Hall", "Community Center", "Library"],
+    "image": "golden_temple_mosque.jpg",
+    "additional_info": {
+      "sect": "Sunni",
+      "capacity": 500,
+      "year_built": 2005
+    }
+  },
+  {
+    "id": 9,
+    "segment_name": "Religious Facilities",
+    "estate_title": "Lotus Shrine",
+    "description": "A serene Buddhist shrine offering meditation sessions and teachings on mindfulness.",
+    "price": "Donation Basis",
+    "status": "sale",
+    "area": "5,000 sq ft",
+    "location": "Rural",
+    "facilities": ["Meditation Hall", "Gardens", "Teaching Rooms"],
+    "image": "lotus_shrine.jpg",
+    "additional_info": {
+      "sect": "Mahayana",
+      "capacity": 200,
+      "year_built": 2010
+    }
+  }
+]
