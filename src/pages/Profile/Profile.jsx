@@ -1,5 +1,14 @@
+import { Helmet } from "react-helmet-async";
 const Profile = () => {
-  return <div>I am in profile section</div>;
+  return (
+    <div>
+      <Helmet>
+        <title>DD || Profile</title>
+      </Helmet>
+
+      <h1>I am Profile</h1>
+    </div>
+  );
 };
 
 export default Profile;

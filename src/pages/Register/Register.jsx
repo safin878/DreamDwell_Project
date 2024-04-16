@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { Helmet } from "react-helmet-async";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { useState } from "react";
 const Register = () => {
   const {
     register,
@@ -14,6 +17,7 @@ const Register = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const { userCreate } = useContext(AuthContext);
+  const [showpassword, setshowpassword] = useState(false);
   //   const hp = (data) => {
   //     console.log(data.name);
   //     const name = data.name
@@ -41,6 +45,9 @@ const Register = () => {
   };
   return (
     <div>
+      <Helmet>
+        <title>DD || Register</title>
+      </Helmet>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col w-full">
           <div className="text-center lg:text-left">
@@ -119,27 +126,35 @@ const Register = () => {
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
-                <input
-                  {...register("password", {
-                    required: {
-                      value: true,
-                      message: "Password is required",
-                    },
-                    minLength: {
-                      value: 6,
-                      message: "Password must be at least 6 characters",
-                    },
-                    pattern: {
-                      value: /^(?=.*[a-z])(?=.*[A-Z])/,
-                      message:
-                        "Password must contain one uppercase letter and one lowercase letter",
-                    },
-                  })}
-                  type="password"
-                  placeholder="password"
-                  className="input input-bordered"
-                  name="password"
-                />
+                <div className="flex justify-center items-center relative">
+                  <input
+                    {...register("password", {
+                      required: {
+                        value: true,
+                        message: "Password is required",
+                      },
+                      minLength: {
+                        value: 6,
+                        message: "Password must be at least 6 characters",
+                      },
+                      pattern: {
+                        value: /^(?=.*[a-z])(?=.*[A-Z])/,
+                        message:
+                          "Password must contain one uppercase letter and one lowercase letter",
+                      },
+                    })}
+                    type={showpassword ? "text" : "password"}
+                    placeholder="password"
+                    className="input input-bordered w-full"
+                    name="password"
+                  />
+                  <span
+                    className="absolute right-3"
+                    onClick={() => setshowpassword(!showpassword)}
+                  >
+                    {showpassword ? <FaEyeSlash /> : <FaEye />}
+                  </span>
+                </div>
                 <div>
                   {errors.password && (
                     <p className="text-red-600">{errors.password.message}</p>
