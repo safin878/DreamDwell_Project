@@ -14,6 +14,7 @@ const Navbar = () => {
       })
       .catch((error) => {
         // An error happened.
+        console.log(error);
       });
   };
 
@@ -37,7 +38,7 @@ const Navbar = () => {
   );
   return (
     <>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100  container mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -73,7 +74,7 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navlinks}</ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end hidden lg:inline-flex">
           {user ? (
             <div className="flex gap-2">
               <div
@@ -90,7 +91,7 @@ const Navbar = () => {
 
               <button
                 onClick={hol}
-                className="btn hover:bg-red-400 hover:text-white"
+                className="btn text-white bg-pcolor  hover:bg-red-400 "
               >
                 logout
               </button>
@@ -98,10 +99,14 @@ const Navbar = () => {
           ) : (
             <div className="flex gap-2">
               <Link to="/login">
-                <button className="btn hover:bg-slate-500">Login</button>
+                <button className="btn bg-pcolor text-white hover:bg-scolor hover:text-black">
+                  Login
+                </button>
               </Link>
               <Link to="/register">
-                <button className="btn hover:bg-amber-400">Register</button>
+                <button className="btn bg-pcolor text-white hover:bg-scolor hover:text-black">
+                  Register
+                </button>
               </Link>
             </div>
           )}

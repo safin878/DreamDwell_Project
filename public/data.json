@@ -9,7 +9,7 @@
     "area": "50,000 sq ft",
     "location": "Downtown",
     "facilities": ["Emergency Room", "ICU", "Surgical Suites", "MRI Center"],
-    "image": "city_general_hospital.jpg",
+    "image": "https://cdn.leonardo.ai/users/845120bf-0ae7-4c53-9dbb-6a7d9fe67007/generations/b8f81fac-7e02-4290-8982-33f47b541a89/Default_citygeneralhospitaljpg_for_a_real_estate_website_3.jpg",
     "additional_info": {
       "beds": 300,
       "parking_capacity": 200,
@@ -30,7 +30,7 @@
       "Maternity Ward",
       "Physical Therapy Center"
     ],
-    "image": "sunrise_medical_center.jpg",
+    "image": "https://cdn.leonardo.ai/users/845120bf-0ae7-4c53-9dbb-6a7d9fe67007/generations/b62472ce-be26-46d3-9236-df9fc3cd84e2/Default_sunrisemedicalcenterjpg_for_a_real_estate_website_3.jpg",
     "additional_info": {
       "beds": 150,
       "parking_capacity": 100,
@@ -47,7 +47,7 @@
     "area": "5,000 sq ft",
     "location": "Suburbia",
     "facilities": ["Family Medicine", "Pharmacy", "Laboratory Services"],
-    "image": "unity_community_clinic.jpg",
+    "image": "https://cdn.leonardo.ai/users/845120bf-0ae7-4c53-9dbb-6a7d9fe67007/generations/2b8f1342-78d0-4eb7-b569-7fe751820b10/Default_unitycommunityclinicjpg_for_a_real_estate_website_0.jpg",
     "additional_info": {
       "exam_rooms": 10,
       "parking_capacity": 50,
@@ -64,7 +64,7 @@
     "area": "30,000 sq ft",
     "location": "Suburbia",
     "facilities": ["Classrooms", "Library", "Playground"],
-    "image": "maplewood_elementary_school.jpg",
+    "image": "https://cdn.leonardo.ai/users/845120bf-0ae7-4c53-9dbb-6a7d9fe67007/generations/707cc362-e169-4022-8b7a-7dc88dd29714/Default_maplewoodelementaryschooljpg_for_a_real_estate_website_2.jpg",
     "additional_info": {
       "grades": "K-5",
       "students_capacity": 500,
@@ -81,7 +81,7 @@
     "area": "50,000 sq ft",
     "location": "Urban",
     "facilities": ["Science Labs", "Gymnasium", "Auditorium"],
-    "image": "oakridge_high_school.jpg",
+    "image": "https://cdn.leonardo.ai/users/845120bf-0ae7-4c53-9dbb-6a7d9fe67007/generations/0c5b378d-6a98-4e8a-8868-9327c94ef750/Default_oakridgehighschooljpg_for_a_real_estate_website_1.jpg",
     "additional_info": {
       "grades": "9-12",
       "students_capacity": 1000,
@@ -98,7 +98,7 @@
     "area": "40,000 sq ft",
     "location": "Suburbia",
     "facilities": ["Classrooms", "Computer Lab", "Athletic Facilities"],
-    "image": "meadowbrook_middle_school.jpg",
+    "image": "https://cdn.leonardo.ai/users/845120bf-0ae7-4c53-9dbb-6a7d9fe67007/generations/8e6c6fe8-f1d4-4cfb-b326-23c270065a9e/Default_meadowbrookmiddleschooljpg_for_a_real_estate_website_3.jpg",
     "additional_info": {
       "grades": "6-8",
       "students_capacity": 750,
@@ -115,7 +115,7 @@
     "area": "15,000 sq ft",
     "location": "Downtown",
     "facilities": ["Sanctuary", "Chapels", "Meeting Rooms"],
-    "image": "grace_cathedral.jpg",
+    "image": "https://cdn.leonardo.ai/users/845120bf-0ae7-4c53-9dbb-6a7d9fe67007/generations/1524752e-d437-4a2c-94c1-1c214f0ecf2f/Default_gracecathedraljpg_for_a_real_estate_website_2.jpg",
     "additional_info": {
       "denomination": "Christian",
       "seating_capacity": 1000,
@@ -132,7 +132,7 @@
     "area": "10,000 sq ft",
     "location": "Suburbia",
     "facilities": ["Prayer Hall", "Community Center", "Library"],
-    "image": "golden_temple_mosque.jpg",
+    "image": "https://cdn.leonardo.ai/users/845120bf-0ae7-4c53-9dbb-6a7d9fe67007/generations/479e70ab-ac6c-417d-a548-453771a7f895/Default_goldentemplemosquejpg_for_a_real_estate_website_1.jpg",
     "additional_info": {
       "sect": "Sunni",
       "capacity": 500,
@@ -149,7 +149,7 @@
     "area": "5,000 sq ft",
     "location": "Rural",
     "facilities": ["Meditation Hall", "Gardens", "Teaching Rooms"],
-    "image": "lotus_shrine.jpg",
+    "image": "https://cdn.leonardo.ai/users/845120bf-0ae7-4c53-9dbb-6a7d9fe67007/generations/ef360214-623b-4bae-9de8-0344e0215866/Default_lotusshrinejpg_for_a_real_estate_website_1.jpg",
     "additional_info": {
       "sect": "Mahayana",
       "capacity": 200,

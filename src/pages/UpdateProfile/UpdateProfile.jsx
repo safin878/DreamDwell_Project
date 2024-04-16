@@ -35,7 +35,7 @@ const UpdateProfile = () => {
         <title>DD || UpdateProfile</title>
       </Helmet>
       <div>
-        <div className=" w-2/4 mx-auto flex flex-col justify-center items-center">
+        <div className=" md:w-2/4 mx-auto flex flex-col justify-center items-center">
           <h2 className="text-5xl text-primary">Update Your Profile</h2>
           <img src={user.photoURL} className="max-w-sm rounded-lg my-3  w-52" />
           <div className="text-center my-3">
