@@ -5,10 +5,14 @@ import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
 import Profile from "../pages/Profile/Profile";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
+import Properties from "../pages/Properties/Properties";
+import PrivateRoute from "./PrivateRoute";
+import Error404 from "../Error/Error404";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    errorElement: <Error404></Error404>,
     element: <Root></Root>,
     children: [
       {
@@ -30,6 +34,14 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/properties",
+        element: (
+          <PrivateRoute>
+            <Properties></Properties>
+          </PrivateRoute>
+        ),
       },
     ],
   },

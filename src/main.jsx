@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Authprovider>
       <RouterProvider router={router} />
-      <ToastContainer />
+      <ToastContainer position="top-left" />
     </Authprovider>
   </React.StrictMode>
 );

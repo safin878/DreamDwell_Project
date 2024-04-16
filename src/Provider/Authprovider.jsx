@@ -6,11 +6,10 @@ import {
   signOut,
 } from "firebase/auth";
 import auth from "../Firebase/firebase.init";
-import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { signInWithPopup } from "firebase/auth";
 export const AuthContext = createContext(null);
 
 const AuthProvider = ({ children }) => {
-  const provider = new GoogleAuthProvider();
   const userCreate = (email, password) => {
     setloading(true);
     return createUserWithEmailAndPassword(auth, email, password);

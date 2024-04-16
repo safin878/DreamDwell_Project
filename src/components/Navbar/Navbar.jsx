@@ -28,6 +28,9 @@ const Navbar = () => {
       <NavLink className="btn btn-ghost hover:bg-color" to="/profile">
         <li>Profile</li>
       </NavLink>
+      <NavLink className="btn btn-ghost hover:bg-color" to="/properties">
+        <li>Properties</li>
+      </NavLink>
     </>
   );
   return (
