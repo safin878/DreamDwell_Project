@@ -16,7 +16,7 @@ import img4 from "../../assets/img-4.jpg";
 
 const Slider = () => {
   return (
-    <>
+    <div>
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
@@ -28,7 +28,7 @@ const Slider = () => {
         pagination={{ clickable: true }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper rounded-2xl"
       >
         <SwiperSlide>
           <img src={img1} alt="" />
@@ -43,7 +43,7 @@ const Slider = () => {
           <img src={img4} alt="" />
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 };
 
