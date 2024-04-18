@@ -16,7 +16,7 @@ import img4 from "../../assets/img-4.jpg";
 
 const Slider = () => {
   return (
-    <div>
+    <div data-aos="fade-up" data-aos-duration="1000">
       <Swiper
         spaceBetween={50}
         slidesPerView={1}

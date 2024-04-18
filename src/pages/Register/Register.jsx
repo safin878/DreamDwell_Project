@@ -48,7 +48,10 @@ const Register = () => {
       <Helmet>
         <title>DD || Register</title>
       </Helmet>
-      <div className="hero min-h-screen  container mx-auto">
+      <div
+        data-aos="zoom-in-down"
+        className="hero min-h-screen  container mx-auto"
+      >
         <div className="hero-content flex-col w-full">
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold">Register now!</h1>

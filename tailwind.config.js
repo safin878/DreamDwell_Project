@@ -10,6 +10,7 @@ export default {
         pcolor: "#525CEB",
         scolor: "#BFCFE7",
         tcolor: "#F8EDFF",
+        lcolor: "#3D3B40",
       },
     },
   },

@@ -1,10 +1,22 @@
+import { FaVectorSquare } from "react-icons/fa";
+import { GrLocation } from "react-icons/gr";
 import { TbUsersGroup } from "react-icons/tb";
+import { Link } from "react-router-dom";
 const EstateCard = ({ card }) => {
-  const { image, estate_title, price, status, description, additional_info } =
-    card;
+  const {
+    id,
+    image,
+    estate_title,
+    price,
+    status,
+    description,
+    area,
+    additional_info,
+    location,
+  } = card;
   return (
-    <div>
-      <div className="card card-compact h-full  bg-base-100 shadow-xl">
+    <div data-aos="fade-right" data-aos-delay="100">
+      <div className="card card-compact h-full  bg-base-100 shadow-xl hover:scale-105 transition border-2 hover:border-pcolor">
         <figure>
           <img src={image} alt="Shoes" />
         </figure>
@@ -17,11 +29,28 @@ const EstateCard = ({ card }) => {
           </div>
           <h2 className="card-title">{estate_title}</h2>
           <p className="text-lg">{description}</p>
-          <div className="card-actions ">
+          <hr />
+          <div className="card-actions gap-4 ">
             <div className="flex items-center gap-2">
               <TbUsersGroup size="25px" />
-              <h2 className="font-medium">{additional_info.capacity}</h2>
+              <h2 className="font-medium">{additional_info.capacity} People</h2>
             </div>
+            <div className="flex items-center gap-2">
+              <FaVectorSquare size="25px" />
+              <h2 className="font-medium">{area}</h2>
+            </div>
+            <div className="flex items-center gap-2">
+              <GrLocation size="25px" />
+              <h2 className="font-medium">{location}</h2>
+            </div>
+          </div>
+          <hr />
+          <div className="card-actions justify-end">
+            <Link to={`/details/${id}`}>
+              <button className="btn bg-pcolor hover:bg-scolor">
+                View Details
+              </button>
+            </Link>
           </div>
         </div>
       </div>

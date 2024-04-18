@@ -8,7 +8,7 @@
     "status": "sale",
     "area": "50,000 sq ft",
     "location": "Downtown",
-    "facilities": ["Emergency Room", "ICU", "Surgical Suites", "MRI Center"],
+    "facilities": "Emergency Room , ICU, Surgical Suites, MRI Center",
     "image": "https://cdn.leonardo.ai/users/845120bf-0ae7-4c53-9dbb-6a7d9fe67007/generations/b8f81fac-7e02-4290-8982-33f47b541a89/Default_citygeneralhospitaljpg_for_a_real_estate_website_3.jpg",
     "additional_info": {
       "beds": 300,
@@ -25,11 +25,7 @@
     "status": "rent",
     "area": "20,000 sq ft",
     "location": "Suburbia",
-    "facilities": [
-      "Pediatrics Department",
-      "Maternity Ward",
-      "Physical Therapy Center"
-    ],
+    "facilities": "Pediatrics Department, Maternity Ward, Physical Therapy Center",
     "image": "https://cdn.leonardo.ai/users/845120bf-0ae7-4c53-9dbb-6a7d9fe67007/generations/b62472ce-be26-46d3-9236-df9fc3cd84e2/Default_sunrisemedicalcenterjpg_for_a_real_estate_website_3.jpg",
     "additional_info": {
       "beds": 150,
@@ -46,10 +42,10 @@
     "status": "sale",
     "area": "5,000 sq ft",
     "location": "Suburbia",
-    "facilities": ["Family Medicine", "Pharmacy", "Laboratory Services"],
+    "facilities": "Family Medicine, Pharmacy, Laboratory Services",
     "image": "https://cdn.leonardo.ai/users/845120bf-0ae7-4c53-9dbb-6a7d9fe67007/generations/2b8f1342-78d0-4eb7-b569-7fe751820b10/Default_unitycommunityclinicjpg_for_a_real_estate_website_0.jpg",
     "additional_info": {
-      "exam_rooms": 10,
+      "beds": 10,
       "capacity": 50,
       "year_built": 2000
     }
@@ -63,7 +59,7 @@
     "status": "sale",
     "area": "30,000 sq ft",
     "location": "Suburbia",
-    "facilities": ["Classrooms", "Library", "Playground"],
+    "facilities": "Classrooms, Library, Playground",
     "image": "https://cdn.leonardo.ai/users/845120bf-0ae7-4c53-9dbb-6a7d9fe67007/generations/707cc362-e169-4022-8b7a-7dc88dd29714/Default_maplewoodelementaryschooljpg_for_a_real_estate_website_2.jpg",
     "additional_info": {
       "grades": "K-5",
@@ -80,7 +76,7 @@
     "status": "rent",
     "area": "50,000 sq ft",
     "location": "Urban",
-    "facilities": ["Science Labs", "Gymnasium", "Auditorium"],
+    "facilities": "Science Labs, Gymnasium, Auditorium",
     "image": "https://cdn.leonardo.ai/users/845120bf-0ae7-4c53-9dbb-6a7d9fe67007/generations/0c5b378d-6a98-4e8a-8868-9327c94ef750/Default_oakridgehighschooljpg_for_a_real_estate_website_1.jpg",
     "additional_info": {
       "grades": "9-12",
@@ -97,7 +93,7 @@
     "status": "sale",
     "area": "40,000 sq ft",
     "location": "Suburbia",
-    "facilities": ["Classrooms", "Computer Lab", "Athletic Facilities"],
+    "facilities": "Classrooms, Computer Lab, Athletic Facilities",
     "image": "https://cdn.leonardo.ai/users/845120bf-0ae7-4c53-9dbb-6a7d9fe67007/generations/8e6c6fe8-f1d4-4cfb-b326-23c270065a9e/Default_meadowbrookmiddleschooljpg_for_a_real_estate_website_3.jpg",
     "additional_info": {
       "grades": "6-8",
@@ -114,10 +110,10 @@
     "status": "sale",
     "area": "15,000 sq ft",
     "location": "Downtown",
-    "facilities": ["Sanctuary", "Chapels", "Meeting Rooms"],
+    "facilities": "Sanctuary, Chapels, Meeting Rooms",
     "image": "https://cdn.leonardo.ai/users/845120bf-0ae7-4c53-9dbb-6a7d9fe67007/generations/1524752e-d437-4a2c-94c1-1c214f0ecf2f/Default_gracecathedraljpg_for_a_real_estate_website_2.jpg",
     "additional_info": {
-      "denomination": "Christian",
+      "sect": "Christian",
       "capacity": 1000,
       "year_built": 1928
     }
@@ -131,7 +127,7 @@
     "status": "sale",
     "area": "10,000 sq ft",
     "location": "Suburbia",
-    "facilities": ["Prayer Hall", "Community Center", "Library"],
+    "facilities": "Prayer Hall, Community Center, Library",
     "image": "https://cdn.leonardo.ai/users/845120bf-0ae7-4c53-9dbb-6a7d9fe67007/generations/479e70ab-ac6c-417d-a548-453771a7f895/Default_goldentemplemosquejpg_for_a_real_estate_website_1.jpg",
     "additional_info": {
       "sect": "Sunni",
@@ -148,7 +144,7 @@
     "status": "sale",
     "area": "5,000 sq ft",
     "location": "Rural",
-    "facilities": ["Meditation Hall", "Gardens", "Teaching Rooms"],
+    "facilities": "Meditation Hall, Gardens, Teaching Rooms",
     "image": "https://cdn.leonardo.ai/users/845120bf-0ae7-4c53-9dbb-6a7d9fe67007/generations/ef360214-623b-4bae-9de8-0344e0215866/Default_lotusshrinejpg_for_a_real_estate_website_1.jpg",
     "additional_info": {
       "sect": "Mahayana",

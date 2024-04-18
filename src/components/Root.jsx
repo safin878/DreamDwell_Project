@@ -10,8 +10,8 @@ const Root = () => {
         <title>DD || Home</title>
       </Helmet>
       <Navbar></Navbar>
-      <div className="h-[100px]"></div>
-      <div className="min-h-[calc(100vh-352px)] mt-8">
+      <div className="md:h-[100px] h-16"></div>
+      <div className="min-h-[calc(100vh-352px)]  md:mt-8">
         <Outlet></Outlet>
       </div>
       <Footer></Footer>

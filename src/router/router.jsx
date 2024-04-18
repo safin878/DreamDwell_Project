@@ -5,8 +5,9 @@ import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
 import Profile from "../pages/Profile/Profile";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
-import Properties from "../pages/Properties/Properties";
+import Membership from "../pages/Membership/Membership";
 import PrivateRoute from "./PrivateRoute";
+import EstateDetailes from "../pages/EstateDetailes/EstateDetailes";
 import Error404 from "../Error/Error404";
 
 const router = createBrowserRouter([
@@ -44,8 +45,18 @@ const router = createBrowserRouter([
         element: <Register></Register>,
       },
       {
-        path: "/properties",
-        element: <Properties></Properties>,
+        path: "/membership",
+        element: <Membership></Membership>,
+        loader: () => fetch(`./membership.json`),
+      },
+      {
+        path: "/details/:id",
+        loader: () => fetch("/data.json"),
+        element: (
+          <PrivateRoute>
+            <EstateDetailes></EstateDetailes>
+          </PrivateRoute>
+        ),
       },
     ],
   },

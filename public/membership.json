@@ -1,0 +1,29 @@
+[
+  {
+    "card_type": "Basic",
+    "price": "$9.99",
+    "features": [
+      "Access to basic property listings",
+      "Limited access to premium features",
+      "Email support"
+    ]
+  },
+  {
+    "card_type": "Standard",
+    "price": "$19.99",
+    "features": [
+      "Access to premium property listings",
+      "Advanced search filters",
+      "Priority customer support"
+    ]
+  },
+  {
+    "card_type": "Premium",
+    "price": "$29.99",
+    "features": [
+      "Access to all property listings",
+      "Exclusive access to premium features",
+      "24/7 priority customer support"
+    ]
+  }
+]

@@ -30,8 +30,8 @@ const Navbar = () => {
         <li>Profile</li>
       </NavLink>
       {user && (
-        <NavLink className="btn btn-ghost hover:bg-color" to="/properties">
-          <li>Properties</li>
+        <NavLink className="btn btn-ghost hover:bg-color" to="/membership">
+          <li>MemberShip</li>
         </NavLink>
       )}
     </>
@@ -62,6 +62,41 @@ const Navbar = () => {
               className="menu mr-4 menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               {navlinks}
+              {user ? (
+                <div className="flex gap-2">
+                  <div
+                    className="tooltip tooltip-bottom"
+                    data-tip={user.displayName}
+                  >
+                    <img
+                      className="w-12 border rounded-full tooltip"
+                      data-tip="hello"
+                      alt="Tailwind "
+                      src={user.photoURL}
+                    />
+                  </div>
+
+                  <button
+                    onClick={hol}
+                    className="btn text-white bg-pcolor  hover:bg-red-400 "
+                  >
+                    logout
+                  </button>
+                </div>
+              ) : (
+                <div className="flex gap-2">
+                  <Link to="/login">
+                    <button className="btn bg-pcolor text-white hover:bg-scolor hover:text-black">
+                      Login
+                    </button>
+                  </Link>
+                  <Link to="/register">
+                    <button className="btn bg-pcolor text-white hover:bg-scolor hover:text-black">
+                      Register
+                    </button>
+                  </Link>
+                </div>
+              )}
             </ul>
           </div>
           <div className="flex items-center">
